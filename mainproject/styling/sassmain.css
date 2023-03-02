@@ -1,0 +1,164 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+#header_container {
+  height: 180px;
+  width: 100%;
+}
+#header_container #main_logo {
+  background-image: url("../pictures/screws.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+#header_container #main_logo h1 {
+  margin-right: 60%;
+  -webkit-animation: header 1.5s linear;
+          animation: header 1.5s linear;
+}
+@-webkit-keyframes header {
+  from {
+    transform: translateY(-60px);
+  }
+  to {
+    transform: translateY(8px);
+  }
+}
+@keyframes header {
+  from {
+    transform: translateY(-60px);
+  }
+  to {
+    transform: translateY(8px);
+  }
+}
+#header_container #main_nav {
+  width: 100%;
+  height: 100px;
+  background-color: HSL(195, 100%, 50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#header_container #main_nav ul {
+  display: flex;
+  flex-direction: row;
+}
+#header_container #main_nav ul li {
+  list-style: none;
+  margin: 20px;
+  padding: 10px;
+  transition: 0.2s linear;
+}
+#header_container #main_nav li:hover {
+  background-color: RGB(12, 166, 120);
+  cursor: pointer;
+  -webkit-border-top-left-radius: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  -moz-border-radius-topleft: 7px;
+  -moz-border-radius-bottomright: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+#header_container #main_nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*----------------------------*/
+#jumbotron {
+  background: url("/pictures/circuit.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(5.5px);
+          backdrop-filter: blur(5.5px);
+  position: relative;
+  height: 500px;
+  width: 100%;
+  border-bottom: 5px;
+}
+#jumbotron #jumbotext {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-blend-mode: lighten;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+#jumbotron #jumbotext p {
+  color: greenyellow;
+}
+
+#selection {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+#selection em {
+  font-weight: bold;
+}
+
+#testimonial {
+  height: 250px;
+  width: 100%;
+  background-color: rgb(97, 45, 9);
+  text-align: center;
+}
+
+#footer {
+  height: 500px;
+  width: 100%;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+}
+#footer #contact_us {
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+#footer #addressessection {
+  height: 500px;
+  width: 50%;
+  background-color: blue;
+}
+#footer .container {
+  contain: content;
+  height: 500px;
+  width: 50%;
+  background-color: pink;
+}
+#footer .container #inputs {
+  width: 300px;
+}
+#footer .container #mainform {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}/*# sourceMappingURL=sassmain.css.map */
